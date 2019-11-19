@@ -113,7 +113,7 @@ We are going to build a very simple server that shows off the basics of GraphQL.
 Open `index.js` and paste the following in.
 
 ```js
-const { ApolloServer, gql } = require('apollo-server');
+import { ApolloServer, gql } from 'apollo-server';
 
 // The GraphQL schema
 const typeDefs = gql`
