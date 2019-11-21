@@ -20,15 +20,21 @@ There are some things you need to know to follow along with this tutorial. You n
 This program is going to do integration by using the Trapezoidal rule, but wait. What is the trapezoidal rule?
 
 The trapezoidal rule allows you to calculate the area under a curve. Let's say you have a weird curve and you want to find the area under the curve between $b$ and $a$, maybe it represents something, you would need this integral:
+
 $$\int^b_a f(x) dx$$
+
 $b$ has to be greater than $a$
 
 But how to calculate this integral? That's where the trapezoidal rule comes in. We will start with rectangles and go to trapezoids soon. 
 
 Imagine that you put 5 equal width rectangles to fill up the area that you want to calculate. If you sum up the area of all 5 rectangles, you will get a good approximation of the area under the curve. These are called Riemann sums: Here is the formula
+
 $$\sum\limits_{k=1}^n f(c_k) x_k$$
+
 Where $x_k$ is the width of the interval. Now, let's replace the rectangles with trapezoids, and here is what we get:
+
 $$\sum\limits_{k=1}^n \frac{f(x_{k-1}) + f(x_k)}{2}x_k$$
+
 The Trapezoidal rule is much more accurate than Riemann sums, and as you will see, it is faster when implementing it in a program.
 
 ## Making the python program
@@ -51,6 +57,7 @@ def integrate_trapeoids(N,a,b):
 Now let's implement the trapezoidal rule!
 
 Remember, this was our function:
+
 $$\sum\limits_{k=1}^n \frac{f(x_{k-1}) + f(x_k)}{2}x_k$$
 
 Add the following code to your function
@@ -105,7 +112,7 @@ def integrate_trapezoids(N,  a,  b):
 	value = 0
 	subInt = float(b - a)  / N
 	value += f(a)/2.0
-	# Dividing to seperate intervals
+	# Dividing to separate intervals
 	for n in  range(1, N +  1):
 	value +=  f(a + n*subInt)
 	return value * subInt
@@ -133,7 +140,9 @@ These bonus sections will have some fun things for us.
 ### Implementing the Riemann Sum function
 
 Earlier in this tutorial, I talked about Riemann sums but I never showed how to implement them because this article was about the Trapezoidal rule. In this bonus section, I will show how to implement the Riemann sum. If you remember, here was the Mathematical function for the Riemann Sum:
+
 $$\int^b_a f(x) dx=\sum\limits_{k=1}^n f(c_k) x_k$$
+
 Let's implement this in python. I will show you the function. Add the following code under the `integrate_trapezoids` function.
 
 ```python
@@ -146,9 +155,9 @@ def integrate_rectangular(N,  a,  b):
 		raise Exception("a cannot be greater than b")
 	value =  0
 	value2 =  0
-	for n in  range(1, N +  1):
-	value +=  f(a + ((n - (1/2)) * ((b - a)/ N)))
-	value2 =  ((b - a)  / N)  * value
+	for n in range(1, N +  1):
+	    value +=  f(a + ((n - (1/2)) * ((b - a)/ N)))
+	    value2 =  ((b - a)  / N)  * value
 	return value2
 ```
 
