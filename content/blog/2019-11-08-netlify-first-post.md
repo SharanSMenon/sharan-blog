@@ -15,7 +15,6 @@ Here are some topics I might post about
 6. And more...
 
 There will be more content to come in the next few months (and years) so stay tuned.
-
 Bye for now!
 
 Sharan
