@@ -94,17 +94,17 @@ from math import  *
 import timeit
 f =  lambda  x: x**2 # Replace this with your function in python notation
 def numDeriv(function,  value):
-        """
-	Calculates the derivative by using the limit 
-	definition. It returns a number that represents 
-	the slope of the line tangent to that point.
-	"""
-	h =  0.00000000001
-	top =  function(value + h)  -  function(value)
-	bottom = h
-	slope = top / bottom
-	# Returns the slope to the third decimal
-	return  float("%.3f"  % slope)
+    """
+    Calculates the derivative by using the limit 
+    definition. It returns a number that represents 
+    the slope of the line tangent to that point.
+    """
+    h =  0.00000000001
+    top =  function(value + h)  -  function(value)
+    bottom = h
+    slope = top / bottom
+    # Returns the slope to the third decimal
+    return  float("%.3f"  % slope)
 d = numDeriv(f, 4)
 print("The slope of the tangent line at x = 4 is {}".format(d)).
 ```
