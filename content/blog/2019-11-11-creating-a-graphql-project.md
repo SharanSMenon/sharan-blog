@@ -3,7 +3,7 @@ title: Creating a GraphQL project
 date: 2019-11-12T01:26:01.653Z
 description: A project setup for GraphQL
 ---
-GraphQL is a powerful query language for API's developed by the team at Facebook. There are a variety of tools that you can use to create a GraphQL API. We will use [Apollo Server](https://www.apollographql.com/) in this tutorial. This project will be very simple but you can easily expand it. You will learn the basics of GraphQL.
+GraphQL is a powerful query language for APIs developed by the team at Facebook. There are a variety of tools that you can use to create a GraphQL API. We will use [Apollo Server](https://www.apollographql.com/) in this tutorial. This project will be very simple but you can easily expand it. You will learn the basics of GraphQL.
 
 ## Prerequisites
 
@@ -118,30 +118,36 @@ import { ApolloServer, gql } from 'apollo-server';
 // The GraphQL schema
 const typeDefs = gql`
  type Query {
- "A simple type for getting started!"
- hello: String
+     hello: String
  }
 `;
 
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => 'world',
+    hello: () => 'Hello World', // This is where the code is executed
   },
 };
-
+// Making the server
 const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
-
+// Starting the server - goes to port 4000
 server.listen().then(({ url }) => {
   console.log(`Server ready at ${url}`);
 });
 ```
 
-And there we are. This is a fully functional but simple server that is easily expandable.
-Type in `npm run dev` to the terminal to start the server
+And there we are. This is a fully functional but simple server that is easily expandable thanks to its organized file structure.
+
+Type in `npm run dev` to the terminal to start the server and head over to http://localhost:4000 to see the GraphQL Playground. You can type the following query in the editor:
+
+```graphql
+query {
+    hello
+}
+```
 
 ## Conclusion
 
@@ -157,14 +163,17 @@ Here are some bonus ideas to get you started.
 4. Install a test runner like Jest and make some tests for your server
 5. Create a client to interact with your server (Angular, React, etc.)
 6. Move the schema to its separate file as it gets more complex
-   ### Bonus App Ideas
-   Here are some ideas for an app you can build the backend with GraphQL
-7. A Blog App
-8. A Todo App (Classic)
-9. A Expenses Manager
-10. A Lists manager (It manages a list of lists)
-11. A Notes app
-12. A Recipes App
+
+### Bonus App Ideas
+
+Here are some ideas for an app you can build the backend with GraphQL
+
+1. A Blog App
+2. A Todo App (Classic)
+3. A Expenses Manager
+4. A Lists manager (It manages a list of lists)
+5. A Notes app
+6. A Recipes App
 
 There are tons of applications that you can build. For all these applications, you can build a backend with GraphQL.
 
@@ -181,7 +190,7 @@ There are tons of applications that you can build. For all these applications, y
 >
 > 1. Mongoose (MongoDB Only) (JS)
 > 2. Sequelize (SQL Databases) (JS)
-> 3. SQL Alchemy (SQL Databases) (Python)
+> 3. SQLAlchemy (SQL Databases) (Python) <- You can build  a GraphQL api in Python
 > 4. Prisma (Many databases) (JS)
 >
 > **Quick Note**: If you are building a frontend and don't want to style your application with CSS, try these alternatives:
@@ -194,5 +203,5 @@ There are tons of applications that you can build. For all these applications, y
 
 If you are really interested in GraphQL. I recommend that you take a course on GraphQL. There are many courses online. Here are a few
 
-1. [Complete GraphQL Bootcamp](<>)
+1. Complete GraphQL Bootcamp - By Andrew Mead on Udemy
    Thank you for reading this tutorial and I hope you build something great.
