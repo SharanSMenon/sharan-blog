@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-
+import "./blog-post.css"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -33,9 +33,10 @@ class BlogPostTemplate extends React.Component {
                 ...scale(-1 / 5),
                 display: `block`,
                 marginBottom: rhythm(1),
+                fontFamily:"'Baskervville', serif"
               }}
             >
-              {post.frontmatter.date} - {post.timeToRead} {post.timeToRead == 1 ? "minute" : "minutes"} read
+              {post.frontmatter.date} - {post.timeToRead} {post.timeToRead === 1 ? "minute" : "minutes"} read
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />

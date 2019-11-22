@@ -34,7 +34,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily:"'Permanent Marker', cursive",
             marginTop: 0,
           }}
         >
@@ -70,4 +70,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout
+export default Layout;

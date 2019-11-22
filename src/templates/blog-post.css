@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|IM+Fell+English|Permanent+Marker|Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Baskervville', serif;
+}
+
+p {
+    /* font-family: 'Baskervville', serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>article {
+    flex: 0 50%;
+    /*demo*/
+    box-sizing: border-box
+}
+
+@media(max-width:700px) {
+    .flex-container>article {
+        flex: 0 100%;
+        /*demo*/
+        box-sizing: border-box
+    }
+    blockquote {
+        margin-left:1px;
+    }
+}
+
+article {
+    /* display:inline-block;
+    max-width:43%;
+    margin-top:-50px;
+    margin-left:20px; */
+}
+
+/* article:hover {
+} */
+small {
+    font-family: 'IM Fell English', serif;
+    font-size: 14px;
+}
+
+blockquote {
+    border-left: 7px solid #eee;
+}
+
+blockquote p {
+    font-family: 'IM Fell English', serif;
+}
+
+blockquote ol,
+ul {
+    margin-left: 18px;
+}
