@@ -89,7 +89,7 @@ $$
 
 We will use this since it will be easy to use for this program. Open a python file in your favourite editor and paste the following code in.
 
-```python{9-14}
+```python
 from math import  *
 import timeit
 f =  lambda  x: x**2 # Replace this with your function in python notation
