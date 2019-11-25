@@ -112,3 +112,9 @@ print("The slope of the tangent line at x = 4 is {}".format(d)).
 There you go. That is a fully functional program. Just run it in the terminal and you should see a result.
 
 Well, folks, that's it for this post and thank you for reading and I will see you next time. Bye!
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
