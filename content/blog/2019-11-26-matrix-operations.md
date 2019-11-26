@@ -29,11 +29,11 @@ a=\begin{pmatrix}\
 \end{pmatrix}
 $$
 
-It has 2 rows and 3 columns. To get an element inside a matrix, you write $a\[1, 2]$. This finds the element on the first row and the second column. In our case, it's 3.
+It has 2 rows and 3 columns. To get an element inside a matrix, you write a[1, 2]. This finds the element on the first row and the second column. In our case, it's 3.
 
 ## Addition of Matrices
 
-Lets do the first of 3 basic operations: Addition. This is very simple. We will have matrices $a$ and $b$. We want to do $a +b$. To do that, we just add the corresponding elements. Lets take 2 matrices, $a$ and $b$.
+Let's do the first of 3 basic operations: Addition. This is very simple. We will have matrices $a$ and $b$. We want to do $a +b$. To do that, we just add the corresponding elements. Let's take 2 matrices, $a$ and $b$.
 
 $$
 a=\begin{pmatrix}\
