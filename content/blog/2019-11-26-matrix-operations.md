@@ -78,12 +78,12 @@ b=\begin{pmatrix}
 \end{pmatrix}
 $$
 
-Here is the result of the addition:
+Here is the result of the subtraction:
 
 $$
 b-a=\begin{pmatrix}
 2 & 2 & 1\\
-3 & 1  & 1
+1 & 1  & 1
 \end{pmatrix}
 $$
 
