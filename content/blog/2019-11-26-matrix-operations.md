@@ -14,16 +14,16 @@ What is a matrix? According to Wikipedia...
 It is typically displayed like this, 
 
 $$
-\begin{pmatrix}\
+\begin{pmatrix}
 2 & 3 \\
-4 & 6\
+4 & 6
 \end{pmatrix}
 $$
 
 This is a $2$ x $2$ matrix (it has 2 rows and 2 columns). A $2$ x $3$ matrix would look like this:
 
 $$
-a=\begin{pmatrix}\
+a=\begin{pmatrix}
 2 & 3 & 7\\
 4 & 6  & 5
 \end{pmatrix}
@@ -36,14 +36,14 @@ It has 2 rows and 3 columns. To get an element inside a matrix, you write a[1, 2
 Let's do the first of 3 basic operations: Addition. This is very simple. We will have matrices $a$ and $b$. We want to do $a +b$. To do that, we just add the corresponding elements. Let's take 2 matrices, $a$ and $b$.
 
 $$
-a=\begin{pmatrix}\
+a=\begin{pmatrix}
 2 & 3 & 7\\
 4 & 6  & 5
 \end{pmatrix}
 $$
 
 $$
-b=\begin{pmatrix}\
+b=\begin{pmatrix}
 4 & 5 & 8\\
 5 & 2  & 2
 \end{pmatrix}
@@ -52,7 +52,7 @@ $$
 Here is the result of the addition:
 
 $$
-a+b=\begin{pmatrix}\
+a+b=\begin{pmatrix}
 6 & 8 & 15\\
 9 & 8  & 7
 \end{pmatrix}
@@ -65,14 +65,14 @@ You **must** make sure that the matrices have the **same**  dimension. Both matr
 Subtraction of matrices are the same as addition except you are subtracting the corresponding elements. Again, the matrices **must** have the same dimension.
 
 $$
-a=\begin{pmatrix}\
+a=\begin{pmatrix}
 2 & 3 & 7\\
 4 & 6  & 5
 \end{pmatrix}
 $$
 
 $$
-b=\begin{pmatrix}\
+b=\begin{pmatrix}
 4 & 5 & 8\\
 5 & 7  & 6
 \end{pmatrix}
@@ -81,7 +81,7 @@ $$
 Here is the result of the addition:
 
 $$
-b-a=\begin{pmatrix}\
+b-a=\begin{pmatrix}
 2 & 2 & 1\\
 3 & 1  & 1
 \end{pmatrix}
@@ -98,31 +98,31 @@ Let's go through an example.
 Given matrix $a$, find $3a$.
 
 $$
-a=\begin{pmatrix}\
+a=\begin{pmatrix}
 2 & 3 \\
-4 & 6\
+4 & 6
 \end{pmatrix}
 $$
 
 Lets do the multiplication
 
 $$
-3a=3*\begin{pmatrix}\
+3a=3*\begin{pmatrix}
 2 & 3 \\
-4 & 6\
+4 & 6
 \end{pmatrix}
 $$
 
 We multiply all elements by $3$. 
 
 $$
-3a=\begin{pmatrix}\
+3a=\begin{pmatrix}
 6 & 9 \\
-12 & 18\
+12 & 18
 \end{pmatrix}
 $$
 
-And thats it! We just multiplied a matrix by a scalar.
+And that's it! We just multiplied a matrix by a scalar.
 
 ## Conclusion
 
