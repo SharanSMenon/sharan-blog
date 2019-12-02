@@ -1,6 +1,6 @@
 ---
 title: Derivative rules
-date: 2019-11-21T17:28:48.740Z
+date: 2019-11-23T17:28:48.740Z
 description: This post teaches about the derivative rules with a bonus
 ---
 Hello! In this post, we will learn some of the rules for finding derivatives. This will be very useful when you are trying to find the derivative of a function as this will simplify your work a lot.
