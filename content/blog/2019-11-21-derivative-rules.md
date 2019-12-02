@@ -3,14 +3,11 @@ title: Derivative rules
 date: 2019-11-21T17:28:48.740Z
 description: This post teaches about the derivative rules with a bonus
 ---
-# Derivative Rules
-
 Hello! In this post, we will learn some of the rules for finding derivatives. This will be very useful when you are trying to find the derivative of a function as this will simplify your work a lot.
 
 ## Why do we need these rules
 
 "Why do we need these rules?" I hear you asking. Ok, let me explain. Take the limit definition of the derivative:
-
 
 $$
 \lim_{h\to0}\frac{f(x+h)-f(x)}{h}
@@ -26,12 +23,12 @@ Would we really want to plug this function into the limit definition and evaluat
 
 The following table lists out the 4 main derivative rules that you will use to find derivatives. These rules will simplify your life a lot and they are all easy to learn.
 
-|Rule Name|Rule|
-|---|---|
-|Power Rule|if $f(x)=x^n$, where $n$ is constant, then $f'(x)=nx^{n-1}$|
-|Product Rule|$\frac{d}{dx}(f(x)g(x))=f'(x)g(x) + g'(x)f(x)$|
-|Quotient Rule|$\frac{d}{dx}(\frac{f(x)}{g(x)})=\frac{f'(x)g(x) - g'(x)f(x)}{(g(x))^2}$|
-|Chain Rule|$\frac{d}{dx}(f(g(x)))=f'(g(x))g'(x)$|
+| Rule Name     | Rule                                                                     |
+| ------------- | ------------------------------------------------------------------------ |
+| Power Rule    | if $f(x)=x^n$, where $n$ is constant, then $f'(x)=nx^{n-1}$              |
+| Product Rule  | $\frac{d}{dx}(f(x)g(x))=f'(x)g(x) + g'(x)f(x)$                           |
+| Quotient Rule | $\frac{d}{dx}(\frac{f(x)}{g(x)})=\frac{f'(x)g(x) - g'(x)f(x)}{(g(x))^2}$ |
+| Chain Rule    | $\frac{d}{dx}(f(g(x)))=f'(g(x))g'(x)$                                    |
 
 These rules can be used to calculate the derivative of a function. It is a lot easier 
 
