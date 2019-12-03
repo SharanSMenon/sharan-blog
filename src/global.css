@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|IM+Fell+English|Permanent+Marker|Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--textTitle);
+}
+
+a {
+    color: var(--textLink);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Baskervville', serif;
+}
+
+p {
+    /* font-family: 'Baskervville', serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>article {
+    flex: 0 50%;
+    /*demo*/
+    box-sizing: border-box
+}
+
+@media(max-width:700px) {
+    .flex-container>article {
+        flex: 0 100%;
+        /*demo*/
+        box-sizing: border-box
+    }
+
+    blockquote {
+        margin-left: 1px;
+    }
+}
+
+article {
+    /* display:inline-block;
+    max-width:43%;
+    margin-top:-50px;
+    margin-left:20px; */
+}
+
+/* article:hover {
+} */
+small {
+    font-family: 'IM Fell English', serif;
+    font-size: 15px;
+}
+
+blockquote {
+    border-left: 7px solid #eee;
+}
+
+blockquote p {
+    font-family: 'IM Fell English', serif;
+    color: var(--textNormal)
+}
+
+blockquote ol,
+ul {
+    margin-left: 18px;
+}
+
+body {
+    --bg: white;
+    --textNormal: #222;
+    --textTitle: #222;
+    --textLink: dodgerblue;
+    --hr: hsla(0, 0%, 0%, 0.2);
+    background-color: var(--bg);
+}
+html {
+    transition: 'color 0.2s ease-out, background 0.2s ease-out';
+}
+
+body.dark {
+    -webkit-font-smoothing: antialiased;
+
+    --bg: #022c43;
+    --textNormal: rgba(255, 255, 255, 0.88);
+    --textTitle: white;
+    --textLink: lightblue;
+    --hr: grey;
+}
+td, th {
+    border-color:var(--hr);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: darkblue;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px darkblue;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}

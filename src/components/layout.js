@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { rhythm, scale } from "../utils/typography"
-
+import "../global.css"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -11,50 +11,83 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div className="header">
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(1.5),
+              marginBottom: 0,
+              marginTop: 0,
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h1>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />
+                  <span class="slider round"></span>
+              </label>
+            )}
+          </ThemeToggler>
+        </div>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily:"'Permanent Marker', cursive",
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div className="header">
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              fontFamily: "'Permanent Marker', cursive",
+              // marginTop: "1rem",
+              margin:"0 0 0 0"
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h3>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h3>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className="switch">
+                <input
+                  type="checkbox"
+
+                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />
+                <span className="slider round"></span>
+              </label>
+            )}
+          </ThemeToggler>
+        </div>
       )
     }
     return (
       <div
         style={{
           marginLeft: `auto`,
+          backgroundColor: 'var(--bg)',
+          color: 'var(--textNormal)',
+          // transition: 'color 0.2s ease-out, background 0.2s ease-out',
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,

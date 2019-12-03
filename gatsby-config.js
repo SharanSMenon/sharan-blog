@@ -62,6 +62,7 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
