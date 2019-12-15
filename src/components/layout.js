@@ -51,7 +51,7 @@ class Layout extends React.Component {
             style={{
               fontFamily: "'Permanent Marker', cursive",
               // marginTop: "1rem",
-              margin:"0 0 0 0"
+
             }}
           >
             <Link
