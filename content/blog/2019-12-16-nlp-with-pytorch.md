@@ -3,8 +3,6 @@ title: NLP with Pytorch
 date: 2019-12-17T01:33:28.213Z
 description: Classify a news dataset in python
 ---
-# NLP with Pytorch
-
 We will do NLP using pytorch. This is text classification which will classify news articles. There are 4 types of articles that it can classify
 
 1. Sports
