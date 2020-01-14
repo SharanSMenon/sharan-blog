@@ -1,7 +1,7 @@
 ---
 title: NLP with Pytorch
 date: 2019-12-17T01:33:28.213Z
-description: Classify 4 types of news
+description: Classify a news dataset in python
 ---
 # NLP with Pytorch
 
