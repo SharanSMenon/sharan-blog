@@ -63,7 +63,7 @@ $$
 In this equation, $a=3$, $b=4$, and $c=0$ since there is no $c$. Let's plug these numbers into the quadratic formula and see what we get.
 
 $$
-x=\frac{-(4)\pm \sqrt{4^2-4_3_0}}{2*3}
+x=\frac{-(4)\pm \sqrt{4^2-4*3*0}}{2*3}
 $$
 
 This calculation gives two results:
