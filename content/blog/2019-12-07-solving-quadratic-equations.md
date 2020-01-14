@@ -3,8 +3,6 @@ title: Solving Quadratic Equations
 date: 2019-12-07T21:50:45.899Z
 description: Methods to solve quadratic equations
 ---
-# Methods to solve quadratic equations
-
 This tutorial will teach about two methods that can be used to solve quadratic equations. The methods covered will include:
 
 1. Factoring
@@ -14,13 +12,14 @@ These methods are really powerful and can help you a lot of you are ever trying 
 
 > Pay attention! The form of a quadratic equation is 
 >
->$$
->y=ax^2+bx+c
->$$
+> $$
+> y=ax^2+bx+c
+> $$
 >
->This will be very important in the future.
+> This will be very important in the future.
 
 ## Factoring
+
 The first method that we will cover today is the factoring method. This involves factoring the equation into multiple parts, typically 2. Let's take the following equation and try to find $x$:
 
 $$
@@ -64,7 +63,7 @@ $$
 In this equation, $a=3$, $b=4$, and $c=0$ since there is no $c$. Let's plug these numbers into the quadratic formula and see what we get.
 
 $$
-x=\frac{-(4)\pm \sqrt{4^2-4*3*0}}{2*3}
+x=\frac{-(4)\pm \sqrt{4^2-4_3_0}}{2*3}
 $$
 
 This calculation gives two results:
@@ -75,10 +74,10 @@ $$
 
 So there we go, we used the quadratic formula to solve a quadratic equation that would have been difficult to do with factoring or completing the square.
 
-> *Note*: in the quadratic formula, the part of the equation that says $b^2-4ac$ is called the discriminant and it will be useful itself in determining the number of solutions a quadratic equation has and other things. If the discriminant was negative, then the quadratic equation would have no solutions.
-
+> _Note_: in the quadratic formula, the part of the equation that says $b^2-4ac$ is called the discriminant and it will be useful itself in determining the number of solutions a quadratic equation has and other things. If the discriminant was negative, then the quadratic equation would have no solutions.
 
 ## Conclusion
+
 Today, you learned about two methods to solve equations. You can use both methods somewhere in your life if you are ever trying to solve quadratic equations. In fact, for the quadratic formula, you can write a simple script where you plug in a, b, and c and it outputs the answers. 
 
 Quadratic equations have applications everywhere and will be important as you enter higher mathematics like calculus and other areas.
